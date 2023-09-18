@@ -29,7 +29,7 @@ const useFetch= (url)=>{
                 }) 
                 .catch( err => {
                    if(err.name === 'AbortError'){
-                    console.log('Fetch Aborted');
+                    console.log('Fetch Aborted 404');
                    }else {
                     setisPending(false);
                     setError(err.message); 
